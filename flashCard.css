@@ -1,0 +1,49 @@
+body{
+    background-color:light blue;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    margin-left: 30px;
+    font-size: 20px;
+}
+h1{
+height:80%;
+width:100%;
+border-width:30px;
+/* background-color:rgb(139, 139, 235) ; */
+}
+
+.container{
+        display: grid;
+        grid-gap: 2px;
+        grid-template-areas:""
+       
+}
+.gif{
+    max-width: 100%;
+}
+.container{
+    height:100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        ". . h . ."
+        ". . m . ."
+}
+
+div{ 
+    font-size: 40px;
+    -webkit-animation-name: em;
+    -webkit-animation-duration: 3;
+    animation-name: em;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+
+}
+
+@-webkit-keyframes em{
+    from {color: black; font-size:40px}
+    to {color: black; font-size:60px }
+}
